@@ -12,9 +12,6 @@ st.title("Swapnil's Chat Bot")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# [u: "",
-#  A: "",
-#  u: ""]
 
 for msg in st.session_state.messages: # 
     with st.chat_message(msg["role"]):
