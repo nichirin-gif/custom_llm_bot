@@ -3,13 +3,20 @@ from groq import Groq
 
 st.markdown("""
 <style>
-html, body, [data-testid="stAppViewContainer"] {
+[data-testid="stAppViewContainer"] {
     background: linear-gradient(
-        90deg,
-        rgba(131, 58, 180, 1) 0%,
-        rgba(253, 29, 29, 1) 50%,
-        rgba(252, 176, 69, 1) 100%
+        225deg,
+        #2bc4ff 0%,
+        #2bffff 20%,
+        #2bffff 40%,
+        #2bb3ff 60%,
+        #2b2bff 80%,
+        #2b00ff 100%
     ) !important;
+}
+/* Smooth transition */
+[data-testid="stAppViewContainer"] {
+    transition: background 0.3s ease;
 }
 
 [data-testid="stHeader"] {
