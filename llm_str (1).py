@@ -3,14 +3,18 @@ from groq import Groq
 
 st.markdown("""
 <style>
-    .stApp {
-        background: linear-gradient(
-            90deg,
-            rgba(131, 58, 180, 1) 0%,
-            rgba(253, 29, 29, 1) 50%,
-            rgba(252, 176, 69, 1) 100%
-        );
-    }
+html, body, [data-testid="stAppViewContainer"] {
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    ) !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
